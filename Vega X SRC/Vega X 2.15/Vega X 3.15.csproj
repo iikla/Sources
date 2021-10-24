@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\chann\OneDrive\Desktop\Vega X - v2.1.5a\Vega X - v2.1.5a\Vega X_patched-cleaned.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{96E19053-7E14-4F37-B644-C4E6DDB079B0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>Vega X</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>ns0</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FastColoredTextBox">
+      <HintPath>lib\FastColoredTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="WeAreDevs_API">
+      <HintPath>lib\WeAreDevs_API.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GClass0.cs" />
+    <Compile Include="AdjustableScripts.cs" />
+    <Compile Include="FlappyVega.cs" />
+    <Compile Include="Class0.cs" />
+    <Compile Include="Loader.cs" />
+    <Compile Include="MiniGame.cs" />
+    <Compile Include="Options.cs" />
+    <Compile Include="ScriptHub.cs" />
+    <Compile Include="ScriptHub2.cs" />
+    <Compile Include="ScriptHub3.cs" />
+    <Compile Include="ScriptManager.cs" />
+    <Compile Include="SimpleUI.cs" />
+    <Compile Include="UserControl1.cs" />
+    <Compile Include="VegaX.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="ns1\Class2.cs" />
+    <Compile Include="ns1\Class3.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AdjustableScripts.resx" />
+    <EmbeddedResource Include="FlappyVega.resx" />
+    <EmbeddedResource Include="Loader.resx" />
+    <EmbeddedResource Include="MiniGame.resx" />
+    <EmbeddedResource Include="ns1\Class2.resx" />
+    <EmbeddedResource Include="Options.resx" />
+    <EmbeddedResource Include="ScriptHub.resx" />
+    <EmbeddedResource Include="ScriptHub2.resx" />
+    <EmbeddedResource Include="ScriptHub3.resx" />
+    <EmbeddedResource Include="ScriptManager.resx" />
+    <EmbeddedResource Include="SimpleUI.resx" />
+    <EmbeddedResource Include="UserControl1.resx" />
+    <EmbeddedResource Include="VegaX.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

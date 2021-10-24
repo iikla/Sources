@@ -10,5 +10,6 @@ List of Executor i will not be cracking/leaking
 - Any c++ internal cheats (I will when i learn IDA and c++)
 - Sentinel (wait people use this?)
   
-# if you want a epxloit cracked/source
-  DM me on discord # iikla#5305
+# if you want a exploit cracked/source
+  DM me on discord 
+## iikla#5305

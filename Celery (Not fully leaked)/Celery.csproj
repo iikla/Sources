@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\chann\OneDrive\Desktop\Celery\Celery\Celery-SRC.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0AF0C069-9A4D-4DB4-9AE0-F0286B8FC495}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>Celery</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ScintillaNET">
+      <HintPath>lib\ScintillaNET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SlickTab.cs" />
+    <Compile Include="TOnSelect.cs" />
+    <Compile Include="SlickTabControl.cs" />
+    <Compile Include="EyeStepPackage\imports.cs" />
+    <Compile Include="EyeStepPackage\OP_TYPES.cs" />
+    <Compile Include="EyeStepPackage\EyeStep.cs" />
+    <Compile Include="EyeStepPackage\FunctionArg.cs" />
+    <Compile Include="EyeStepPackage\pcontext.cs" />
+    <Compile Include="EyeStepPackage\EmRemote.cs" />
+    <Compile Include="EyeStepPackage\util.cs" />
+    <Compile Include="EyeStepPackage\scanner.cs" />
+    <Compile Include="philosopher_swift\BasicInject.cs" />
+    <Compile Include="Celery\auto_hook.cs" />
+    <Compile Include="Celery\Form1.cs" />
+    <Compile Include="Celery\LOADING.cs" />
+    <Compile Include="Celery\ManualMapInject.cs" />
+    <Compile Include="Celery\Program.cs" />
+    <Compile Include="Celery\Resize.cs" />
+    <Compile Include="Celery\WinAPI.cs" />
+    <Compile Include="Celery\Properties\Resources.cs" />
+    <Compile Include="Celery\Properties\Settings.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Celery\Form1.resx" />
+    <EmbeddedResource Include="Celery\LOADING.resx" />
+    <EmbeddedResource Include="Celery\Properties\Resources.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
